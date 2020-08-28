@@ -1,11 +1,11 @@
 # IT2351
-i. Executive Summary
+Executive Summary
 
 
-ii. MySQL Workbench
+MySQL Workbench
 
 
-iii. Queries
+Queries
 
 
-iv. Conclusion
+Conclusion
