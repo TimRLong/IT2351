@@ -7,7 +7,7 @@ Query Review
 
 2. Customer first and last names from selected states are concatenated into their full names and given an alias. Then sorted by State, last name, first name. For this query I had to look up the syntax for the Concat function.
 
-3.Customer and order ids are taken from the orders table along with the order and shipping dates. All columns are given aliases and the query is sorted by order date. For this query I had to look up MySQL date formatting.
+3. Customer and order ids are taken from the orders table along with the order and shipping dates. All columns are given aliases and the query is sorted by order date. For this query I had to look up MySQL date formatting.
 
 4. Information is taken from the orders and customers tables with a join on customer id. Dates are selected and aliases are given to all columns. For this query I looked up the syntax for joining tables.
 
@@ -21,4 +21,4 @@ Query Review
 The order quantity and unit price are used to find the total with tax and all columns are given aliases.
 
 Conclusion
-During the course of this assignment I've learned much more about making queries in SQL. 
+During the course of this assignment I've learned much more about making queries in SQL.
