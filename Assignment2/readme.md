@@ -21,4 +21,4 @@ Query Review
 The order quantity and unit price are used to find the total with tax and all columns are given aliases.
 
 Conclusion
-During the course of this assignment I've learned much more about making queries in SQL.
+During the course of this assignment I've learned much more about making queries in SQL. 
