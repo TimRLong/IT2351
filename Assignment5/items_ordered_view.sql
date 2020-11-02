@@ -1,0 +1,1 @@
+CREATE VIEW items_ordered_view AS SELECT product_name, item_price, quantity FROM order_items a inner join products b ON a.product_id = b.product_iditems_ordered_view;
