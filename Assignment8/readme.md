@@ -51,6 +51,8 @@ A.
 -- ‘manager’ is the name of the role to be created
 CREATE ROLE manager;
 
+B.
+
 -- The ability to update the categories table of the guitar database is given to the manager role
 GRANT UPDATE
 ON guitar.categories
@@ -59,7 +61,7 @@ TO manager;
 -- The manager role is assigned to the user with the name TimRLong on the local host
 GRANT manager TO TimRLong@localhost;
 
-Having roles allows different privileges depending on different job requirements.
+C. Having roles allows different privileges depending on different job requirements.
 
 Conclusion 
 
