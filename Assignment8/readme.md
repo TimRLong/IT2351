@@ -29,7 +29,7 @@ GRANT ALL
 ON guitar.*
 TO guitar_admin@localhost;
 
--- Grants database privileges to the user on the guitar database on the local host
+-- Grants database privileges to the user on the guitar database on the local host 
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON guitar.*
 TO guitar_user@localhost;
