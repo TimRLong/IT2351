@@ -59,7 +59,7 @@ GRANT UPDATE
 ON guitar.categories
 TO manager;
 
--- The manager role is assigned to the user with the name TimRLong on the local host
+-- The manager role is assigned to the user with the name TimRLong on the local host 
 GRANT manager TO TimRLong@localhost;
 
 C. Having roles allows different privileges depending on different job requirements.
