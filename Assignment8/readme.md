@@ -36,8 +36,9 @@ TO guitar_user@localhost;
 
 B. There are five privilege levels that can be granted to a user with decreasing amounts of control over the databases. Global level applies to all databases present. Database level applies to all tables present. Table level applies to all columns present in the specified tables. Column level applies to a specific column of a specified table. Lastly Routine level applies to only the specified stored function procedure.
 
-C. CREATE USER guitar_customerId@localhost IDENTIFIED BY 'pa55word';
+C. 
 
+CREATE USER guitar_customerId@localhost IDENTIFIED BY 'pa55word';
 GRANT SELECT(first_name, last_name, email_address), UPDATE (first_name, last_name, email_address);
 ON guitar.customer
 TO guitar_customerId@localhost;
