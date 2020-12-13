@@ -29,19 +29,19 @@ A.
   ON guitar.*             
   TO guitar_admin@localhost;                
 
--- Grants database privileges to the user on the guitar database on the local host 
-GRANT SELECT, INSERT, UPDATE, DELETE
-ON guitar.*
-TO guitar_user@localhost;
+-- Grants database privileges to the user on the guitar database on the local host                    
+GRANT SELECT, INSERT, UPDATE, DELETE                
+ON guitar.*               
+TO guitar_user@localhost;               
 
 B. There are five privilege levels that can be granted to a user with decreasing amounts of control over the databases. Global level applies to all databases present. Database level applies to all tables present. Table level applies to all columns present in the specified tables. Column level applies to a specific column of a specified table. Lastly Routine level applies to only the specified stored function procedure.
 
 C. 
 
-CREATE USER guitar_customerId@localhost IDENTIFIED BY 'pa55word';
-GRANT SELECT(first_name, last_name, email_address), UPDATE (first_name, last_name, email_address);
-ON guitar.customer
-TO guitar_customerId@localhost;
+CREATE USER guitar_customerId@localhost IDENTIFIED BY 'pa55word';               
+GRANT SELECT(first_name, last_name, email_address), UPDATE (first_name, last_name, email_address);            
+ON guitar.customer              
+TO guitar_customerId@localhost;             
 
 D. You would want to limit a customer's ability to reading and updating their name and email because there is information in the rest of the table they shouldn't be able to access. This also allows for a separate page to request the customer's information which will then be entered into the database allowing a much larger customer base with minimal effort.
 
@@ -49,18 +49,18 @@ Roles
 
 A. 
 
--- ‘manager’ is the name of the role to be created
-CREATE ROLE manager;
+-- ‘manager’ is the name of the role to be created            
+CREATE ROLE manager;            
 
 B.
 
--- The ability to update the categories table of the guitar database is given to the manager role
-GRANT UPDATE
-ON guitar.categories
-TO manager;
+-- The ability to update the categories table of the guitar database is given to the manager role                 
+GRANT UPDATE            
+ON guitar.categories              
+TO manager;               
 
--- The manager role is assigned to the user with the name TimRLong on the local host 
-GRANT manager TO TimRLong@localhost;
+-- The manager role is assigned to the user with the name TimRLong on the local host                  
+GRANT manager TO TimRLong@localhost;              
 
 C. Having roles allows different privileges depending on different job requirements.
 
