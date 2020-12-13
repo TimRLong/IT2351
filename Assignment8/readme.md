@@ -19,32 +19,20 @@ Privileges
 A.
 
 -- The administrator guitar_admin@localhost is created on local host and given the password pa55word
-
 CREATE USER guitar_admin@localhost IDENTIFIED BY 'pa55word';
 
-
 -- The user guitar_user@localhost is created on local host and given the password pa55word
-
 CREATE USER guitar_user@localhost IDENTIFIED BY 'pa55word';
 
-
 -- Grants all privileges to the administrator on the guitar database on the local host
-
 GRANT ALL
-
 ON guitar.*
-
 TO guitar_admin@localhost;
 
-
 -- Grants database privileges to the user on the guitar database on the local host
-
 GRANT SELECT, INSERT, UPDATE, DELETE
-
 ON guitar.*
-
 TO guitar_user@localhost;
-
 
 B. There are five privilege levels that can be granted to a user with decreasing amounts of control over the databases. Global level applies to all databases present. Database level applies to all tables present. Table level applies to all columns present in the specified tables. Column level applies to a specific column of a specified table. Lastly Routine level applies to only the specified stored function procedure.
 
