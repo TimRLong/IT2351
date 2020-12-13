@@ -19,24 +19,24 @@ Privileges
 A.
 
 -- The administrator guitar_admin@localhost is created on local host and given the password pa55word
-
+.
 CREATE USER guitar_admin@localhost IDENTIFIED BY 'pa55word';
-
-
+.
+.
 -- The user guitar_user@localhost is created on local host and given the password pa55word
-
+.
 CREATE USER guitar_user@localhost IDENTIFIED BY 'pa55word';
-
-
+.
+.
 -- Grants all privileges to the administrator on the guitar database on the local host
-
+.
 GRANT ALL
-
+.
 ON guitar.*
-
+.
 TO guitar_admin@localhost;
-
-
+.
+.
 -- Grants database privileges to the user on the guitar database on the local host
 
 GRANT SELECT, INSERT, UPDATE, DELETE
